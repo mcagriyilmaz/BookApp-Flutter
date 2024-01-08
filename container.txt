@@ -1,0 +1,19 @@
+Container(
+            child: Stack(
+              children: [
+                Positioned(
+                  top: 25,
+                  right: 0,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ProfileScreen()),
+                      );
+                    },
+                    child: SvgPicture.asset('assets/icons/icon_user_grey.svg'),
+                  ),
+                ),             
+                 ],
+            ),
+          ),
